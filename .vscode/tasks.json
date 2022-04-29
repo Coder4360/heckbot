@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "Build Debug",
+            "command": "make",
+            "args": [
+                "build_debug"
+            ],
+            "detail": "compiler: make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build Release",
+            "command": "make",
+            "args": [
+                "build_release"
+            ],
+            "detail": "compiler: make",
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}
