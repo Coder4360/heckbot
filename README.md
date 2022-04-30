@@ -1,1 +1,2 @@
 # heckbot
+A discord bot

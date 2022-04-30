@@ -1,5 +1,6 @@
 #include <string>
 #include <dpp/dpp.h>
+#include <fstream>
 
 struct app_config
 {
@@ -16,11 +17,11 @@ const std::string BOT_NAME = "Heckbot";
  * @return struct app_config The bot configuration
  */
 struct app_config get_configuration(int argc, char** argv) {
-    if (argc < 1) {
-        throw std::overflow_error("No argv 1, are you missing the bot token?");
-    }
+    std::ifstream token_file("token.txt");
+    std::string token;
+    token_file >> token;
     return {
-        token: argv[1]
+        token: token
     };
 };
 
