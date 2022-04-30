@@ -19,7 +19,8 @@ const std::string BOT_NAME = "Heckbot";
 struct app_config get_configuration(int argc, char** argv) {
     std::ifstream token_file("token.txt");
     std::string token;
-    token_file >> token;
+    std::getline(token_file, token);
+    std::cout << token << "\n";
     return {
         token: token
     };
