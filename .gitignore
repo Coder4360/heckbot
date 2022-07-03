@@ -1,2 +1,4 @@
 bin/**
 token.txt
+invite_url.txt
+src/puto.cpp
